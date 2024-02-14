@@ -3,7 +3,8 @@ AllCops:
   AutoCorrect: true
   Exclude:
     - "db/**/*"
-    - "bin/*" 
+    - "bin/*"
+    - 'vendor/**/*'    
     - "config/**/*"
     - "Guardfile"
     - "Rakefile"
