@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'layouts#index'
+  root 'greetings#index'
   get '/random_greeting', to: 'greetings#random'
 end
