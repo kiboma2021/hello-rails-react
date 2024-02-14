@@ -234,9 +234,9 @@ I thank Microverse for this fantastic opportunity, and the code reviewers for th
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>v
+## 📝 License <a name="license"></a>
 
-This project is [MIT](https://web.mit.edu/) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
