@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Rails React</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <!-- Include any meta tags, stylesheets, or other resources needed -->
+</head>
+<body>
+  <!-- Include a div element where your React app will be mounted -->
+  <div id="root"></div>
+
+  <!-- Include the webpack bundles for your React components -->
+  <%= javascript_pack_tag 'application' %>
+</body>
+</html>
