@@ -13,131 +13,164 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [Hello API ](#hello-api-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run linters](#run-linters)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Hello rails + react] <a name="about-project"></a>
 
-> An app to test how to create a rails + react application
+**"Hello react-rails"** is a project that consists of a simple API that returns a greeting message. The API is built with Ruby on Rails and the frontend is built with ReactJS. 
 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+<details>
+  <summary>Backend</summary>
+  <ul>
+    <li><a href="https://guides.rubyonrails.org/">Ruby on Rails (v7.0.8)</a></li>
+    <li><a href="https://www.postgresql.org/docs/">PostgreSQL</a></li>
+  </ul>
+</details>
 
-- Ruby & Rails
-- React & Redux
+<details>
+  <summary>Frontend</summary>
+  <ul>
+    <li><a href="https://react.dev/learn">ReactJS</a></li>
+    <li><a href="https://reactrouter.com/en/6.17.0/start/tutorial">React Router v6</a></li>
+    <li><a href="https://axios-http.com/docs/intro">Axios</a></li>
+    <li><a href="https://redux-toolkit.js.org/introduction/getting-started">Redux Toolkit</a></li>
+  </ul>
+</details>
 
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- The API returns a greeting message
+- The frontend displays the greeting message
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
+---
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-Follow these steps on your console to properly clone this repository on your desktop:
-
-```
-$ cd desktop
-$ git clone https://github.com/kiboma2021/hello-rails-react.git
-$ cd hello-rails-react
-$ code .
-Run hello-rails-react to see outputs in the console.
-Run 'rubocop' to check linter offenses.
-```
-
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need to:
+In order to run this project you need:
 
-    Create database for the project with `bin/rails db:create`, otherwise create databases manually in PostgreSQL.
+<ul>
+    <li><p>A code editor (we recommend Visual Studio Code)</p></li>
+</ul>
 
-    Install all gems `bundle install`
+<ul>
+    <li><p>Git and a GitHub account</p></li>
+</ul>
 
-    Set up RSpec in your app and create the Spec folder `rails g rspec:install`
+### Setup
 
-    Run the migration into your testing environment `rails db:migrate RAILS_ENV=test`
+Clone this repository to your desired folder by using this 👇️ command :
 
-    To see all tests with description run `rspec spec --format documentation`
-
-
-
+```
+git clone https://github.com/kiboma2021/hello-rails-react.git
+```
 
 ### Install
 
-Install this project with:
+Go to the project directory:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
 ```
---->
+ cd hello-rails-react
+```
+
+Before to run the program, verify that you have Ruby on Rails installed on your OS running the following command:
+
+```
+ rails --version
+```
+
+It should show you the version of ruby on rails ​​installed. If this does not happen and only an error message is displayed, then you should either verify your installation or install Ruby on Rails from scratch.
+
+[Download and Install Ruby on Rails](https://guides.rubyonrails.org/getting_started.html)
+
+Once you have verified that you have Ruby on Rails installed, run the following command to install the necessary gems:
+
+```
+ bundle install
+```
+
+After installing the gems, run the following command to create the database:
+
+```
+ rails db:create
+```
+
+Then run the following command to migrate the database:
+
+```
+ rails db:migrate
+```
+
+Then run the following command to install React, Redux, and all the Node packages:
+
+```
+ npm install
+```
+
+if you have any problem with the previous command, try to run the following command:
+
+```
+ yarn install
+```
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
+Run the following command inside the project folder to start the application:
 
 ```
- -->
+  ./bin/dev
+```
+
+Those commands will start the application on your local server. You can now open your browser and go to http://localhost:3000/ to see the application running.
+
+### Run linters
+
+To verify that the ruby and CSS code is written without errors and meets good practice standards, run the following command inside the project folder:
+
+- **ruby linter:**
+```
+ rubocop
+```
+
+- **CSS linter:**
+```
+ stylelint "**/*.{css,scss}"
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 <!-- AUTHORS -->
 
@@ -145,24 +178,26 @@ Example:
 
 👤 **Ben Kiboma**
 
-- GitHub: [@kiboma2021](https://github.com/kiboma2021)
-- Twitter: [@BenOmayio](https://twitter.com/omayiobenj)
+- GitHub: [@BenOmayio](https://github.com/kiboma2021)
 - LinkedIn: [@BenOmayio](https://www.linkedin.com/in/ben-kiboma/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+Upcoming improvements:
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] Add the endpoints to create, update and delete a greeting
+- [ ] Add CSS styles to the app
+- [ ] Deploy the application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 <!-- CONTRIBUTING -->
 
@@ -170,45 +205,32 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/kiboma2021/hello-rails-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project and know someone who might find it helpful, please share it.
+Or give it a **star** ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I thank Microverse for this fantastic opportunity, and the code reviewers for their advice and time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
 <!-- LICENSE -->
 
@@ -216,6 +238,6 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
